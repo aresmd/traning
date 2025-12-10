@@ -1,0 +1,83 @@
+ba zadane dastore git tamame dastorat bala miayand 
+
+ba zadane git -help ... be morogar miravim baraye khondand doc mesle git -help add
+
+ba click rast dar mahale project va zadane git bash va ba zadane git config dar mohite morede nazar dar dastorat baraye ma neveshte mishavand
+ git config --global user.name "mamad"
+ git config --global email.email "mamad@ex.com"
+ git config --list liste git ra neshan midahad
+ 
+git config --global --list
+---
+
+baraye sakht file ba git az touch estefade mikonim
+
+baraye sakhte repasitory az git init estefade mikonim
+ 
+ba dastore git status vaziyate file haye ma moshakhas mishavad 
+va ba dastore git add esmeFile mitavan kari kard ke taghirate on file ro zire nazar gereft
+
+ba dastore ls lidte file haye maro miyare
+
+--
+
+commit kardan be in mani ast ke ma ba dastore zir mitavanim ye version az codemon ro zakhire konim
+git commit -m"har chizi mesal: initial commit.."
+
+ba dastore git add . hame file ha ke darim add mishe
+
+git diff tan tafavote file hay man ba file hayii ke commit shodan
+
+--
+baraye remove yek file az repasitori az  rm esmeFile estefade mikonim
+baraye remove yek directoary az repasitori az  rm -r esmedirectoary estefade mikonim
+
+baraye ersale code hayeman be github az git push estefade mikonim 
+baraye daryafte code haye baghiye az github az git pull estefade mikonim 
+
+----
+
+ma 2 noe makhzan darim 1 publick 2 privet
+
+git remote add "esme delkhah baraye repositori ya behtare hamon origin bashe" "linke repositori" in baraye ine ke ma project ra be repositori motasel konim
+
+git push -u origin master baraye dafe aval push kardan
+baraye dafate badi az git push esmefile
+
+ma dar push be ravesh ssh ma bayad ebteda  ssh-keygen -t rsa -b 4096 -C "aresmd78@gmail.com"   in ra benevisim bad az ma 
+key mikhahad ke felan khodash ra mizarim va inter mizanaim
+badesh  cd ~/.ssh mizanim ta varede on beshim
+bad  eval `ssh-agent -s` ra mizanim ta yek agent baraye ma besazad
+bad ssh-add id_rsa ramizanim
+
+ma mitavanim ba dastore clip < id_rsa.pub file ra copy konim va in ra ma dar bakhshe setting va ssh an ra add konim key copy shode ra hala  mitavanim file khodemon ra push konim
+ma yek directoary jadid misazim ta betavanim az dir ghabli kharej beshavim va file hamon ro push konim
+
+----
+
+
+baraye zamani ke ma nemikhahim ke ek sri az file ha baraye ma teract beshand yek file misazim be name .gitignore va esme fil ha va poshe ha ro dakhele on misazim
+masalan node/  ya *.txt
+
+
+--
+baraye mogheh ii ke yek shakhs varede prroject ma mishe ma bayad ye ooo bayad yek branch baraye khodesh dorost kone
+ma varede poshe jadidemon mishim va dakhele terminal mizanim git clone https://github.com/aresmd/git-learn.git be in mani ke yek kocpy baraye man az on code ha begir
+
+hala barye code zadan ma bayad yek branch besazim
+baraye sakhte branch az dastore git branch esmechizi ke mikhahim besazim
+baraye vorod be branch az git checkout esmeBranch estefade mikonim
+
+barae push kardane branch bayad esme branch am benevisim        
+
+baraye inke hamzaman ham branch besazim ham varedesh beshim az git checkout -b esmebranch estefade mikonim
+* baraye sakhte ye branch jadid bayad az dakhele branch asli brach besazim
+
+
+baraye hazfe branch az git push origin -d <branch-name> estefade mikonim
+
+baraye inke branch asliman ra be master vasl konim bayad be git hub beravim roye branche morede azar click konim new pullrequuest ra bezanim va edame midahim ke dar
+dar conflicts be moshkel nakhorim
+baraye hale conflicts 2 ravesh darim yek lockal do az khode github
+ma be branchi mirim ke conflicts dare va toye an code git pull origin master ra mizanim
+bade anjame taqirat git add mikonim va push mikonim baraye an branchi ke moshkel dasht
